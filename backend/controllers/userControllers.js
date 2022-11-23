@@ -15,7 +15,7 @@ exports.createTask = async (req,res) => {
         // check if task already exists
         const taskExists = await User.findOne({task});
         if(taskExists){
-            throw new error("this task already created");
+            throw new Error("this task already created");
         }
 
         // insert in database

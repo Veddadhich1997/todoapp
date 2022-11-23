@@ -1,11 +1,11 @@
 import './App.css';
 import Task from './components/task';
-import TaskList from './components/taskList';
+import { TaskList } from './components/taskList';
 function App() {
   return (
-    <div className='ved'>
+    <div>
       <Task />
-      <TaskList />
+      <TaskList/>
     </div>
   );
 }
